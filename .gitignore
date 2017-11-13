@@ -25,3 +25,7 @@ hs_err_pid*
 #eclipse files#
 .metadata/
 RemoteSystemsTempFiles/
+
+#idea files#
+.idea/
+.recommenders/
