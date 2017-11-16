@@ -1,0 +1,30 @@
+1.	Bij tekstverwerkingsprogramma’s zoals Word heb je vaak de mogelijkheid om je bestanden op te slaan in diverse formaten. Via een menu kun je bijvoorbeeld de volgende opties krijgen:
+•	Save as Word '97
+•	Save as Word (XML)
+•	Save as RTF
+•	Save as HTML
+•	Save as Plain Text
+Stel je moet een programma ontwerpen en bouwen die dit voor je kan doen. De volgende eisen worden gesteld:
+•	Het programma bidet een aantal standaardformaten aan waaruit je kan kiezen
+•	Als er een nieuw formaat bij moet komen, dan kan dit relatief eenvoudig worden gedaan door middel van uitbreiding. Als een formaat niet meer geldig is dan geldt hetzelfde voor verwijderen.
+•	Het aantal formaten is niet beperkt.
+
+Maak een ontwerp voor het programma dat voldoet aan de gestelde eisen. Leg uit wat je moet doen om een nieuw formaat toe te voegen (welke delen van het programma moeten worden aangepast). Programmeer je ontwerp in Java. Hou het simpel, als een keuze is gemaakt dan is een print van de keuze voldoende. Een echte menuweergave is ook niet nodig dit kan een eenvoudig geprint lijstje zijn, waaruit je een keuze maakt op basis van positie.
+
+2.	Importeer in je IDE uit de opdrachtenmap op sharepoint, het java project “employee.zip”. Het programma is een klein salarissysteem voor werknemers en is niet ontworpen op basis van ontwerpprincipes en daardoor moeilijk aan te passen. Verbeter het ontwerp door gebruik te maken van “favour composition over inheritance”. Maak een klassendiagram dat dit aantoont en programmer je ontwerp in Java.
+
+3.	Stel we moeten de rekening betalen bij het uitchecken in een hotel. Het hotelsysteem is oud en simpel: betaal contant. Het systeem om te registreren zou als volgt kunnen worden gemaakt.
+
+void checkOut(Receipt receipt)
+{
+  Money total = Money.zero;
+  for (item : items)
+ {
+    total += item.getPrice();
+    receipt.addItem(item);
+  }
+  Payment p = acceptCash(total);
+  receipt.addPayment(p);
+}
+
+Het systeem moet worden aangepast, zodanig dat er ook betaald kan worden met creditcard of pin of wellicht andere methoden in de toekomst. Pas het systeem aan zodanig dat de nieuwe eisen eenvoudig gerealiseerd kunnen worden. Tip: ga na wat varieert en abstraheer dit.
